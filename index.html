@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="w-50">
+            <!-- Bài 1 -->
+            <h1>Bài 1: Số nguyên tăng dần</h1>
+            <form>
+                <div class="form-group">
+                    <label for="so1">Số Nguyên thứ 1 : </label>
+                    <input type="number" class="form-control" id="so1" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                    <label for="so2">Số Nguyên thứ 2 : </label>
+                    <input type="number" class="form-control" id="so2">
+                </div>
+                <div class="form-group">
+                    <label for="so3">Số Nguyên thứ 3 : </label>
+                    <input type="number" class="form-control" id="so3">
+                </div>
+                <button onclick="sapXepTang()" id="sapXep1" type="button" class="btn btn-primary">Sắp Xếp</button>
+                <p class="alert alert-primary">
+                    Số nguyên theo chiều tăng dần là :
+                <p id="kq1"></p>
+                </p>
+            </form>
+            <!-- Bài 2 -->
+            <h1>Bài 2: Gia đình chào hỏi</h1>
+            <form>
+                <div class="form-group">
+                    <label for="aiSuDung">Ai Đang sử dụng ? Bố (B), Mẹ (M), anh Trai (A) và Em gái (E)</label>
+                    <input type="text" class="form-control" id="aiSuDung">
+                </div>
+                <button onclick="nhanBietAi()" type="button" class="btn btn-primary">Xác Nhận</button>
+                <p id="kq2" class="alert alert-primary"></p>
+            </form>
+            <!-- Bài 3 -->
+            <h1>Bài 3: Đếm số chẵn lẻ</h1>
+            <form>
+                <div class="form-group">
+                    <label for="so1_3">Số Nguyên thứ 1 : </label>
+                    <input type="number" class="form-control" id="so1_3">
+                </div>
+                <div class="form-group">
+                    <label for="so2">Số Nguyên thứ 2 : </label>
+                    <input type="number" class="form-control" id="so2_3">
+                </div>
+                <div class="form-group">
+                    <label for="so3">Số Nguyên thứ 3 : </label>
+                    <input type="number" class="form-control" id="so3_3">
+                </div>
+                <button onclick="demSo()" type="button" class="btn btn-primary">Đếm Số</button>
+                <p id="kq3" class="alert alert-primary">
+                    
+                </p>
+            </form>
+            <!-- Bài 4 -->
+            <h1>Bài 4: Tam Giác</h1>
+            <form>
+                <div class="form-group">
+                    <label for="so1_3">Nhập Cạnh a : </label>
+                    <input type="number" class="form-control" id="canhA">
+                </div>
+                <div class="form-group">
+                    <label for="so1_3">Nhập Cạnh b : </label>
+                    <input type="number" class="form-control" id="canhB">
+                </div>
+                <div class="form-group">
+                    <label for="so1_3">Nhập Cạnh c : </label>
+                    <input type="number" class="form-control" id="canhC">
+                </div>
+                <button onclick="xacDinh()" type="button" class="btn btn-primary">Xác Nhận</button>
+                <p class="alert alert-primary">
+                    <span id="kq4"></span>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
